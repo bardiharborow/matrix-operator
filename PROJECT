@@ -1,0 +1,7 @@
+domain: matrix.bardiharborow.com
+layout: helm.sdk.operatorframework.io/v1
+projectName: matrix-operator
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
