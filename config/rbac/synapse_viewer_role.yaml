@@ -1,0 +1,20 @@
+# permissions for end users to view synapses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: synapse-viewer-role
+rules:
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - synapses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - synapses/status
+  verbs:
+  - get

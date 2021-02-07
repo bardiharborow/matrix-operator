@@ -28,4 +28,35 @@ rules:
   verbs:
   - create
 
+##
+## Rules for homeserver.matrix.bardiharborow.com/v1alpha1, Kind: Synapse
+##
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - synapses
+  - synapses/status
+  - synapses/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- verbs:
+  - "*"
+  apiGroups:
+  - ""
+  resources:
+  - "serviceaccounts"
+  - "services"
+- verbs:
+  - "*"
+  apiGroups:
+  - "apps"
+  resources:
+  - "deployments"
+
 # +kubebuilder:scaffold:rules
