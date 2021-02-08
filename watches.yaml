@@ -3,4 +3,8 @@
   version: v1alpha1
   kind: Synapse
   chart: helm-charts/synapse
+- group: client.matrix.bardiharborow.com
+  version: v1alpha1
+  kind: Element
+  chart: helm-charts/element
 # +kubebuilder:scaffold:watch

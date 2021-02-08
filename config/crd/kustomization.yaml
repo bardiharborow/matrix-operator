@@ -3,4 +3,5 @@
 # It should be run by config/default
 resources:
 - bases/homeserver.matrix.bardiharborow.com_synapses.yaml
+- bases/client.matrix.bardiharborow.com_elements.yaml
 # +kubebuilder:scaffold:crdkustomizeresource

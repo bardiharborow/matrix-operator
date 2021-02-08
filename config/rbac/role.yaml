@@ -59,4 +59,35 @@ rules:
   resources:
   - "deployments"
 
+##
+## Rules for client.matrix.bardiharborow.com/v1alpha1, Kind: Element
+##
+- apiGroups:
+  - client.matrix.bardiharborow.com
+  resources:
+  - elements
+  - elements/status
+  - elements/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- verbs:
+  - "*"
+  apiGroups:
+  - ""
+  resources:
+  - "serviceaccounts"
+  - "services"
+- verbs:
+  - "*"
+  apiGroups:
+  - "apps"
+  resources:
+  - "deployments"
+
 # +kubebuilder:scaffold:rules

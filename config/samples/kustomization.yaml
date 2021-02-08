@@ -1,4 +1,5 @@
 ## Append samples you want in your CSV to this file as resources ##
 resources:
 - homeserver_v1alpha1_synapse.yaml
+- client_v1alpha1_element.yaml
 # +kubebuilder:scaffold:manifestskustomizesamples
