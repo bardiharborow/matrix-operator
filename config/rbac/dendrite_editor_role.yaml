@@ -1,0 +1,24 @@
+# permissions for end users to edit dendrites.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dendrite-editor-role
+rules:
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - dendrites
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - dendrites/status
+  verbs:
+  - get

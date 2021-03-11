@@ -2,4 +2,5 @@
 resources:
 - homeserver_v1alpha1_synapse.yaml
 - client_v1alpha1_element.yaml
+- homeserver_v1alpha1_dendrite.yaml
 # +kubebuilder:scaffold:manifestskustomizesamples

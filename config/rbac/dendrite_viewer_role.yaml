@@ -1,0 +1,20 @@
+# permissions for end users to view dendrites.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: dendrite-viewer-role
+rules:
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - dendrites
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - dendrites/status
+  verbs:
+  - get

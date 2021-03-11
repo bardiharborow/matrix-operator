@@ -60,6 +60,58 @@ rules:
   - "deployments"
 
 ##
+## Rules for homeserver.matrix.bardiharborow.com/v1alpha1, Kind: Dendrite
+##
+- apiGroups:
+  - homeserver.matrix.bardiharborow.com
+  resources:
+  - dendrites
+  - dendrites/status
+  - dendrites/finalizers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - services
+  - services/finalizers
+  - endpoints
+  - persistentvolumeclaims
+  - events
+  - configmaps
+  - secrets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps
+  resources:
+  - deployments
+  - daemonsets
+  - replicasets
+  - statefulsets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+
+##
 ## Rules for client.matrix.bardiharborow.com/v1alpha1, Kind: Element
 ##
 - apiGroups:

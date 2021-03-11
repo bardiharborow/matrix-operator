@@ -6,6 +6,9 @@ resources:
 - group: homeserver
   kind: Synapse
   version: v1alpha1
+- group: homeserver
+  kind: Dendrite
+  version: v1alpha1
 - group: client
   kind: Element
   version: v1alpha1

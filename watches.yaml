@@ -3,6 +3,10 @@
   version: v1alpha1
   kind: Synapse
   chart: helm-charts/synapse
+- group: homeserver.matrix.bardiharborow.com
+  version: v1alpha1
+  kind: Dendrite
+  chart: helm-charts/dendrite
 - group: client.matrix.bardiharborow.com
   version: v1alpha1
   kind: Element
